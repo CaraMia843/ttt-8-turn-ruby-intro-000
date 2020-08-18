@@ -20,6 +20,8 @@ def valid_move?(number_entered, board)
   number_entered.between?(0, 8) && !(position_taken?(board, number_entered))
 end
   
+  
+  
 def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.strip
