@@ -16,8 +16,10 @@ def move(board, index, player = "X")
   board[index] = player
 end
 
-def valid_move?(number_entered, board)
-  number_entered.between?(0, 8) && !(position_taken?(board, number_entered))
+def valid_move?(board, index)
+   if index.between?(0,8) && !position_taken?(board, index)
+      return true
+   end
 end
   
 def position_taken?(board, index)
