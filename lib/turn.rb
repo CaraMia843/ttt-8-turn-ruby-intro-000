@@ -27,5 +27,5 @@ def position_taken?(board, index)
 end
   
 def turn(board)
-  
+  puts 
 end
